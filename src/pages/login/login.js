@@ -22,14 +22,21 @@ function Login({navigation, userInfo, userLogin}) {
         backgroundColor: 'white',
         padding: 20,
       }}>
-      <Image
-        style={{width: 100, height: 100, alignSelf: 'flex-start'}}
-        resizeMethod="scale"
-        resizeMode="contain"
-        source={{
-          uri: 'https://reactnative.dev/img/tiny_logo.png',
-        }}
-      />
+      <View
+        style={{
+          alignSelf: 'flex-start',
+          paddingHorizontal: 25,
+          marginVertical: 20,
+        }}>
+        <Image
+          style={{width: 70, height: 70}}
+          resizeMethod="scale"
+          resizeMode="contain"
+          source={{
+            uri: 'https://reactnative.dev/img/tiny_logo.png',
+          }}
+        />
+      </View>
       <Input
         onChangeText={text => setUsername(text)}
         value={username}
