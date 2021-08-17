@@ -20,7 +20,9 @@ function TabA({navigation, user, userLogout, receipt}) {
   const [overlayVis, setOverlayVis] = useState(false);
   const [currentQuarter, setCurrentQuarter] = useState(moment().get('quarter'));
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setListData(receipt?.list);
+  }, [receipt]);
 
   const onTabChange = tabName => {
     alert(tabName + ' руу шилжив');
@@ -44,7 +46,8 @@ function TabA({navigation, user, userLogout, receipt}) {
           alignSelf: 'center',
           alignItems: 'center',
           backgroundColor: '#f2f2f2',
-          borderRadius: 25,
+          borderTopLeftRadius: 25,
+          borderTopRightRadius: 25,
         }}>
         <TouchableHighlight
           underlayColor="transparent"

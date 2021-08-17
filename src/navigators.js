@@ -1,3 +1,5 @@
+import AddReceipt from './pages/home/addReceipt';
+import {AddReceiptModal} from './components';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Login from './pages/login/login';
 import {NavigationContainer} from '@react-navigation/native';
@@ -6,7 +8,6 @@ import React from 'react';
 import TabA from './pages/home/tabA';
 import TabADetails from './pages/home/tabADetails';
 import TabB from './pages/home/tabB';
-import {TabBDetails} from './pages/home/tabB';
 import {connect} from 'react-redux';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
@@ -106,7 +107,7 @@ function HomeTab() {
         },
       })}>
       <HomeTabNav.Screen name="Камер нээх" component={HomeTabAStack} />
-      <HomeTabNav.Screen name="Баримт шивэх" component={HomeTabBStack} />
+      <HomeTabNav.Screen name="Баримт шивэх" component={AddReceiptModal} />
       <HomeTabNav.Screen name="Татвар" component={HomeTabBStack} />
       <HomeTabNav.Screen name="Үйлчилгээ" component={HomeTabBStack} />
       <HomeTabNav.Screen name="Бусад" component={HomeTabBStack} />
