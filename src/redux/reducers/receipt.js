@@ -233,10 +233,9 @@ const todo = (state = initialState, action) => {
       if (action?.data?.id === -1) {
         return {
           ...state,
-          list: [...state?.list, {...action.data}],
+          list: [...state?.list, {...action.data, id: action?.data?.lottery}],
         };
       } else {
-        console.log('UPDATING!!!');
         let nana = state?.list?.map(x => {
           if (x?.lotteryNumber === action?.data?.lotteryNumber) {
             x = action?.data;

@@ -139,7 +139,7 @@ function AddReceiptModal({navigation, receiptAddEdit}) {
                   receiptAddEdit({
                     id: -1,
                     lotteryNumber: data?.lotteryNumber,
-                    amount: data?.lotteryNumber,
+                    amount: data?.amount,
                     returnAmount: 690.91,
                     companyName: 'Tesla',
                     date: new Date().toISOString(),
