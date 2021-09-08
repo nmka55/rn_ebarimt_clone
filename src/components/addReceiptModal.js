@@ -92,7 +92,7 @@ function AddReceiptModal({navigation, receiptAddEdit}) {
               onChangeText={text =>
                 setData({
                   ...data,
-                  amount: Number.parseFloat(text),
+                  amount: parseFloat(text),
                 })
               }
               value={data?.amount.toString()}
