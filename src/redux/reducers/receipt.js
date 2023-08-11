@@ -229,7 +229,6 @@ const initialState = {
 const todo = (state = initialState, action) => {
   switch (action.type) {
     case RECEIPT_ADD_EDIT:
-      console.log(RECEIPT_ADD_EDIT);
       if (action?.data?.id === -1) {
         return {
           ...state,

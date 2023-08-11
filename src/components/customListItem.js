@@ -24,10 +24,6 @@ export default function CustomListItem({data}) {
     {id: 5, title: 'Амралт зугаалга', icon: 'coffee'},
   ]);
 
-  console.log(
-    data?.category,
-    // categoryList?.find(x => x?.id === data?.category)?.icon,
-  );
   return (
     <>
       <TouchableHighlight

@@ -174,7 +174,6 @@ function CustomHeader({
 }
 
 const mapStateToProps = state => {
-  console.log(state?.receipt?.list);
   return {user: state?.user, receipt: state?.receipt};
 };
 

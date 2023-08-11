@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator \"iPhone 14 Pro Max\"",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.5",
@@ -16,8 +17,10 @@
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/stack": "^6.0.6",
     "moment": "^2.29.1",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "react": "17.0.1",
-    "react-native": "0.64.2",
+    "react-native": "0.64.4",
     "react-native-camera": "^4.0.1",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^1.10.3",
