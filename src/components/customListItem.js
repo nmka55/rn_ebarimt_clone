@@ -9,7 +9,7 @@ import moment from 'moment';
 const formatter = new Intl.NumberFormat('de-DE', {
   style: 'currency',
   currency: 'MNT',
-  currencyDisplay: 'narrowSymbol',
+  currencyDisplay: 'symbol',
 });
 
 export default function CustomListItem({data}) {

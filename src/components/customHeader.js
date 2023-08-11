@@ -10,7 +10,7 @@ import moment from 'moment';
 const formatter = new Intl.NumberFormat('de-DE', {
   style: 'currency',
   currency: 'MNT',
-  currencyDisplay: 'narrowSymbol',
+  currencyDisplay: 'symbol',
 });
 
 const thisYear = moment().get('year');

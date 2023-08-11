@@ -12,7 +12,7 @@ import {receiptAddEdit} from '../redux/actions';
 const formatter = new Intl.NumberFormat('de-DE', {
   style: 'currency',
   currency: 'MNT',
-  currencyDisplay: 'narrowSymbol',
+  currencyDisplay: 'symbol',
 });
 
 const ReceiptDetailItem = ({data, index}) => {
